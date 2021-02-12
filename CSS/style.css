@@ -1,0 +1,185 @@
+H1 H2 H3 H4 H5 H6 {
+    font-family: DM Serif Display;
+}
+p {
+    font-family: Helvetica;
+    font-weight: 200;
+}
+li {
+    font-family: DM Serif Display;
+}
+header .inline-block {
+    display: inline-block;
+    vertical-align: top;
+    background-color: teal;
+}
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+    float: left;
+}
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+nav {
+    width: 73%;
+    padding: 1%;
+    float: right;
+}
+nav ul {
+    width: 50%;
+    margin-left: auto;
+}
+header li {
+    display: inline-block;
+    padding: 0px 5px;
+    color: white;
+}
+#main-nav a {
+    text-decoration: none;
+}
+#main-nav a:link {
+    color: white;
+}
+#main-nav a:visited {
+    color: inherit;
+}
+#main-nav a:hover {
+    color: tomato;
+}
+button {
+    padding: 10px;
+    background-color: teal;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    font-family: Helvetica;
+    font-weight: 500;
+}
+button:hover {
+    background-color: tomato;
+}
+.heroImg {
+    background-image: url("/Users/calebbrumley/Documents/HW/My Code HW/UX_UI_HW_19/Images/_AFM1123.jpg");
+    padding: 100px 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+.content img {
+    max-width: 300px;
+}
+footer {
+    background-color: teal; 
+}
+footer .inline-block {
+    display: inline-block;
+    padding: 20px;
+}
+footer li {
+    color: white;
+}
+.flexContainer {
+    display: flex;
+    width: 33% 33% 33%;
+    margin: 10px;
+    padding: 10px;
+}
+.flexContainer div {
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+.mySkills {
+    margin: auto;
+    padding: 20px;
+}
+.myWork {
+    margin: auto;
+    padding: 20px;
+}
+.workGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    'doiPic doiText'
+    'divvyText divvyPic'
+    'morcPic morcText';
+}
+.doiPic {
+    grid-area: doiPic;
+    justify-self: center;
+    margin: auto;
+    padding: 20px;
+}
+.doiText {
+    grid-area: doiText;
+    justify-self: center;
+    align-self: center;
+    margin: auto;
+    padding: 20px;
+}
+.divvyPic {
+    grid-area: divvyPic;
+    justify-self: center;
+    margin: auto;
+    padding: 20px;
+}
+.divvyText {
+    grid-area: divvyText;
+    justify-self: center;
+    align-self: center;
+    margin: auto;
+    padding: 20px;
+}
+.morcPic {
+    grid-area: morcPic;
+    justify-self: center;
+    margin: auto;
+    padding: 20px;
+}
+.morcText {
+    grid-area: morcText;
+    justify-self: center;
+    align-self: center;
+    margin: auto;
+    padding: 20px;
+}
+@media only screen and (max-width: 600) {
+.flexContainer {
+    flex-direction: column;
+}
+.flexA {
+    width: 100%;
+}
+.flexB {
+    width: 100%;
+}
+.flexC {
+    width: 100%;
+}
+.workGrid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+    'doiPic' 
+    'doiText'
+    'divvyText' 
+    'divvyPic'
+    'morcPic' 
+    'morcText';
+}
+}
